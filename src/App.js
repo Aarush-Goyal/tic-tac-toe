@@ -95,9 +95,12 @@ const App = () => {
               </Button>
             </div>
           ) : (
-            <h1 className="text-center">
-              {isCross ? "Cross" : "Circle"} turns
+            <div>
+              <h1 className="text-center">Tic-Tac-Toe</h1>
+            <h1 className="text-center winnermessage">
+              {isCross ? "Cross'" : "Circle's"} turns
             </h1>
+            </div>
           )}
           <div className="grid">
             {itemArray.map((item, index) => (
